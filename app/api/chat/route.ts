@@ -72,7 +72,10 @@ export async function POST(req: NextRequest) {
 
       if (status === 429) {
         return NextResponse.json(
-          { error: 'NivoraHR is temporarily busy. Please try again in a moment.' },
+          {
+            error: 'NivoraHR is temporarily busy. Please try again in a moment.',
+            debug: errorMessage
+          },
           { status: 429 }
         );
       }
