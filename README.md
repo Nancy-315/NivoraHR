@@ -136,7 +136,7 @@ Click **Deploy**. Vercel will build the Next.js application in ~45 seconds and p
 ## 🔒 Security & Privacy
 
 * **Strict Server-Side Isolation:** The Gemini API key is processed exclusively inside Next.js serverless functions (`/api/chat`).
-* **Zero Public Variables:** No client-side `NEXT_PUBLIC_GEMINI_API_KEY` exists in this repository.
+* **Zero Public Variables:** No client-side public environment keys exist in this repository.
 * **No Database Storage:** Conversation history remains solely in the client's current session memory, preserving student privacy.
 
 ---
