@@ -32,24 +32,24 @@ NivoraHR is a modern, high-speed AI assistant designed specifically for MBA HR s
 
 ```
 NivoraHR/
-├── src/
-│   ├── app/
-│   │   ├── api/
-│   │   │   └── chat/
-│   │   │       └── route.ts       # Secure server-side streaming API route
-│   │   ├── globals.css            # Custom typography, scrollbars & prose styling
-│   │   ├── layout.tsx             # Root layout and metadata
-│   │   └── page.tsx               # Main reactive chat client & streaming state
-│   ├── components/
-│   │   ├── ChatInput.tsx          # Dynamic auto-resizing input with keyboard shortcuts
-│   │   ├── ChatMessage.tsx        # Message bubble with Markdown, copy & retry
-│   │   ├── Header.tsx             # Brand header with Live indicator & New Chat
-│   │   └── WelcomeScreen.tsx      # Hero screen with suggested MBA HR prompts
-│   ├── lib/
-│   │   └── gemini.ts              # Gemini system prompt, formatting & model config
-│   └── types/
-│       └── chat.ts                # TypeScript interfaces for messages and payload
-├── .env.example                   # Environment variable template
+├── app/
+│   ├── api/
+│   │   └── chat/
+│   │       └── route.ts       # Secure server-side streaming API route
+│   ├── globals.css            # Custom typography, scrollbars & prose styling
+│   ├── layout.tsx             # Root layout and metadata
+│   └── page.tsx               # Main reactive chat client & streaming state
+├── components/
+│   ├── ChatInput.tsx          # Dynamic auto-resizing input with keyboard shortcuts
+│   ├── ChatMessage.tsx        # Message bubble with Markdown, copy & retry
+│   ├── Header.tsx             # Brand header with Live indicator & New Chat
+│   └── WelcomeScreen.tsx      # Hero screen with suggested MBA HR prompts
+├── lib/
+│   └── gemini.ts              # Gemini system prompt, formatting & model config
+├── types/
+│   └── chat.ts                # TypeScript interfaces for messages and payload
+├── public/                    # Static assets
+├── .env.example               # Environment variable template
 ├── .gitignore                     # Git ignore rules for secrets and builds
 ├── next.config.mjs                # Next.js build configuration
 ├── package.json                   # Dependencies and scripts
