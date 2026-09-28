@@ -95,7 +95,10 @@ export async function POST(req: NextRequest) {
       }
 
       return NextResponse.json(
-        { error: 'Something went wrong. Please try again.' },
+        {
+          error: 'Something went wrong. Please try again.',
+          debug: { status, detail: errorMessage }
+        },
         { status: 500 }
       );
     }
@@ -177,7 +180,10 @@ export async function POST(req: NextRequest) {
     }
 
     return NextResponse.json(
-      { error: 'Something went wrong. Please try again.' },
+      {
+        error: 'Something went wrong. Please try again.',
+        debugException: error?.message || String(err)
+      },
       { status: 500 }
     );
   }
