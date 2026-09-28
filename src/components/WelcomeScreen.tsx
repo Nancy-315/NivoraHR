@@ -56,6 +56,12 @@ const QUICK_PROMPTS = [
     color: 'text-cyan-600 bg-cyan-50 border-cyan-100',
   },
   {
+    title: 'Create an HR Questionnaire',
+    description: 'Construct 5-point Likert survey scales for MBA research projects',
+    icon: FileSpreadsheet,
+    color: 'text-teal-600 bg-teal-50 border-teal-100',
+  },
+  {
     title: 'Help me prepare for an HR Interview',
     description: 'Behavioural questions, STAR method, scenario answers & resume tips',
     icon: Briefcase,
@@ -79,7 +85,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onSelectPrompt }) 
 
       {/* Subtitle */}
       <p className="mt-3 max-w-xl text-sm sm:text-base text-slate-600 leading-relaxed">
-        I&apos;m your intelligent HR & MBA assistant. Ask me anything about HR, MBA projects, internships, assignments, labour laws, analytics, or viva preparation.
+        Your intelligent HR &amp; MBA assistant. Ask me anything about HR, MBA projects, labour laws, internships, assignments, reports, or viva preparation.
       </p>
 
       {/* Feature Highlights Pills */}
