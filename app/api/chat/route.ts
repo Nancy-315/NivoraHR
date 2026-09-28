@@ -72,10 +72,7 @@ export async function POST(req: NextRequest) {
 
       if (status === 429) {
         return NextResponse.json(
-          {
-            error: 'NivoraHR is temporarily busy. Please try again in a moment.',
-            debug: errorMessage
-          },
+          { error: 'NivoraHR is temporarily busy. Please try again in a moment.' },
           { status: 429 }
         );
       }
@@ -95,10 +92,7 @@ export async function POST(req: NextRequest) {
       }
 
       return NextResponse.json(
-        {
-          error: 'Something went wrong. Please try again.',
-          debug: { status, detail: errorMessage }
-        },
+        { error: 'Something went wrong. Please try again.' },
         { status: 500 }
       );
     }
@@ -180,10 +174,7 @@ export async function POST(req: NextRequest) {
     }
 
     return NextResponse.json(
-      {
-        error: 'Something went wrong. Please try again.',
-        debugException: error?.message || String(err)
-      },
+      { error: 'Something went wrong. Please try again.' },
       { status: 500 }
     );
   }
